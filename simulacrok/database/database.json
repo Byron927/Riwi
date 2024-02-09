@@ -1,0 +1,47 @@
+{
+  "news": [
+    {
+      "id": "45af",
+      "name": "Klopp dice adiós al Liverpool",
+      "url": "https://assets-es.imgfoot.com/media/cache/1200x675/klopp2324x.jpg",
+      "categoryId": "5978",
+      "description": "El técnico alemán dejará el conjunto red a final de temporada y la situación deportiva del guajiro quedará en el aire. Los colombianos cruzan los dedos para que la situación de James Rodríguez no se repita con él",
+      "userId": "d371",
+      "date": "2/2/2024"
+    },
+    {
+      "id": "e92f",
+      "name": "Xavi anuncia su salida",
+      "url": "https://estaticos-cdn.prensaiberica.es/clip/ff9c8de0-d66e-4f0b-93f6-f2b91caad839_16-9-discover-aspect-ratio_default_0.webp",
+      "categoryId": "5978",
+      "description": "Xavi Hernández anunció su salida como director técnico del Barcelona, esto con efecto para el próximo 30 de junio, cuando termina oficialmente la temporada del conjunto blaugrana.\n",
+      "userId": "d371",
+      "date": "2/2/2024"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Culture",
+      "description": "Todo sobre cultura y arte.",
+      "id": "asdf"
+    },
+    {
+      "id": "3212",
+      "name": "Tecnology",
+      "description": "Todo sobre nuevas tecnologias y ciencia"
+    },
+    {
+      "id": "5978",
+      "name": "Sports",
+      "description": "Noticias y análisis deportivos"
+    }
+  ],
+  "users": [
+    {
+      "id": "d371",
+      "name": "Keiber Lazaro",
+      "email": "test@riwi.io",
+      "password": "riwi2024"
+    }
+  ]
+}

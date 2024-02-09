@@ -1,0 +1,64 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+  & .tittle {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  & .user {
+    background: var(--primary);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 40px;
+    margin: 5px;
+    transition: 0.3s;
+    & .user-date{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      & #a {
+        background-image: url(../img/the-witcher-1024x1024.webp);
+      }
+      & #b {
+        background-image: url(../img/082723ad570164eb39b670dbad5ee92a.jpg);
+      }
+      & #c {
+        background-image: url(../img/gaming-profile-pictures-ai9qlazq1uszo8v4.jpg);
+      }
+      & #d {
+        background-image: url(../img/descarga.jpg);
+      }
+      & #e {
+        background-image: url(../img/gaming-profile-pictures-4v1pzuz1uqbshmur.jpg);
+      }
+      & .picture {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    & .points {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px; 
+    }
+    & #best {
+      color: var(--success);
+    }
+  }
+  & .user:hover{
+    background:var(--success);
+    & #best{
+      color: var(--light);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://cdn.bitlysdowssl-aws.com/wp-content/uploads/2023/08/Spacex.jpg");
+  /* background-position: center center; */
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-size: cover;
+  /* flex-direction: column; */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* body { */
+  /* -ms-overflow-style: none;  */
+  /* IE and Edge */
+  /* scrollbar-width: none;  */
+  /* Firefox */
+/* } */
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .container {
+    width: 80%;
+  }
+}
+
+.card {
+  background: rgb(255, 255, 255, 0.3);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  & h5 {
+    padding-top: 10px;
+  }
+}
+
+.modal-content {
+  height: 550px !important;
+}

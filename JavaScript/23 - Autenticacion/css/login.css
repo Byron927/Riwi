@@ -1,0 +1,25 @@
+#form-login {
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.btn-primary:hover {
+  filter: brightness(50%);
+}
+.btn-primar:active {
+  background-color: #3e8e41;
+}

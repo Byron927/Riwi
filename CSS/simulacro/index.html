@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>HOTEL Portobelo</title>
+</head>
+
+<body>
+    <header class="header">
+      <div class="cont-logo">
+        <img src="./img/logoPortobelo.png" alt="Hotel Portobelo">
+      </div>
+			<div class="nav-pc">
+				<div class="checkbox">
+					<i class='bx bx-menu'></i>
+					<input type="checkbox" id="checkbox">
+				</div>
+
+
+				<nav class="nav-bar">
+					<label for="reservas">
+						<span class="esp">Reservas</span>
+						<i class='bx bxs-dish'></i>
+						<p class="r"><i class='bx bxs-down-arrow'></i></p>
+						<input type="checkbox" id="reservas">
+					<div class="option-hotel" id="test">
+						<select name="tipo" id="tipo">
+							<option value="">Tipo de habitacion</option>
+							<option value="">Sencilla</option>
+							<option value="">Doble</option>
+						</select>
+						<select name="estilo" id="estilo">
+							<option value="">Estilo de habitacion</option>
+							<option value="">Premium</option>
+							<option value="">Moderno</option>
+							<option value="">Luxury</option>
+						</select>
+						<div class="check">
+							<label for="">Check-in <i class='bx bx-calendar-check' ></i></label>
+							<div>
+						<input type="date" name="check-in" id="check-in" placeholder="check-in" required>
+							</div>
+						
+						</div>
+						<div class="check">
+							<label for="">Check-out <i class='bx bx-calendar-x' ></i></label>
+							<div class="despliegue">
+						<input type="date" name="check-out" id="check-out"
+						required>
+							</div>
+						</div>
+						<button class="btn" type="submit">Verificar Disponibilidad</button>
+					</div>
+
+					<label for="inicio" class="esp">Inicio Sesion</label>
+					<i class='bx bxs-user' ></i>
+					<input type="checkbox" id="inicio">
+					<div class="sesion">
+						<div class="sesion-dates">
+							<label for="">Usuario</label>
+							<input type="text" name="usuario" id="usuario" required>
+							<label for="">Contraseña</label>
+							<input type="password" name="password" id="password" required>
+							<button class="btn" type="submit">Iniciar sesión</button>
+						</div>
+					</div>
+				</nav>
+
+			</div>
+			
+    </header>
+		<main>
+			<section class="first">
+				<div class="first-i">
+					<i class='bx bx-chevron-down'></i>
+				</div>			
+			</section>
+			<section class="second">
+
+				
+        <div class="texto">
+					<h2>BIENVENIDOS</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam odit eaque repellendus sapiente vel eveniet molestias cupiditate dolores veritatis sequi, maxime necessitatibus, a facilis. Quidem dolorum maxime excepturi possimus.</p>
+        </div>
+				
+				<div class="img img-a">
+					<div class="mask"></div>
+					<span>PLAN ROMANTICO</span>
+				</div>
+				<div class="img img-b">
+					<div class="mask"></div>
+					<span>PLAN LUNA DE MIEL</span>
+				</div>
+				<div class="img img-c">
+					<div class="mask"></div>
+					<span>PLAN AVENTURA</span>
+				</div>
+				<div class="img img-d">
+					<div class="mask"></div>
+					<span>PLAN SPA</span>
+				</div>
+				
+      </section>
+
+
+
+		</main>
+
+
+</body>
+
+</html>

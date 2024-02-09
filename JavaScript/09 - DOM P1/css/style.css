@@ -1,0 +1,48 @@
+.imagen {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #000;
+  margin: 20px;
+}
+
+#titulo_contenedor {
+  font-size: 53px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px red;
+  text-align: center;
+}
+
+table {
+  margin: 20px auto;
+  border: 2px solid #222;
+  overflow: hidden;
+  min-width: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border-collapse: collapse;
+}
+
+table thead {
+  background: #161a32;
+  color: #fafafa;
+}
+
+table th,
+td {
+  padding: 20px;
+  text-align: center;
+  color: #fafafa;
+}
+
+table tr:nth-child(even) {
+  background: rgb(151, 168, 188);
+}
+
+table tr {
+  transition: 0.3s;
+}
+
+table tr:hover {
+  transform: scale(1.05);
+}

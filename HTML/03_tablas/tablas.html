@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        text-align: center;
+      }
+
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid #002fff;
+        border-collapse: collapse;
+        padding: 2px 20px;
+      }
+      /* con lo de abajo le dejo un ancho fijo a todos los td */
+      /* td {
+        width: 100px;
+      } */
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+      }
+      thead {
+        background-color: #09ff00;
+      }
+      tfoot {
+        background-color: #5ff773;
+      }
+      body {
+        background-image: url(img/perrito.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- cuando el archivo index esta en la misma carpeta raiz se puede colocar solo el "." -->
+    <a href=".">Volver</a>
+    <header>
+      <center>
+        <h1>Tablas en HTML5</h1>
+      </center>
+    </header>
+    <section>
+      <h2>Estructura basica de una tabla</h2>
+      <table>
+        <!-- tr: esto es una fila -->
+        <tr>
+          <td>item 1</td>
+          <td>item 2</td>
+          <td>item 3</td>
+          <td>item 4</td>
+        </tr>
+        <tr>
+          <td>product 1</td>
+          <td>product 2</td>
+          <td>product 3</td>
+          <td>product 4</td>
+        </tr>
+      </table>
+      <h2>Estructura completa de una tabla</h2>
+      <table>
+        <!-- cabecera de la tabla -->
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <!-- cuerpo de la tabla -->
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Keiber</td>
+            <td>Lázaro</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Leandro</td>
+            <td>Bastos</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+        <!-- footer de la tabla -->
+        <tfoot>
+          <tr>
+            <td colspan="3">Total Estudiantes</td>
+            <td>2</td>
+          </tr>
+        </tfoot>
+      </table>
+      <h2>Tabla con multimedia</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Raza</th>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Video</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rottweiler</td>
+            <td>
+              <img
+                src="https://www.elmueble.com/medio/2023/03/09/perro-de-raza-rottweiler_9f7a22a7_230309180127_900x900.jpg"
+                alt="Rottweiler"
+              />
+            </td>
+            <td>Nico</td>
+            <td>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/lQMf2jfqS6Y?si=mH53ScUQBCVruMa2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </td>
+          </tr>
+          <tr>
+            <td>Serval</td>
+            <td>
+              <img
+                src="https://images.unsplash.com/flagged/photo-1551255868-86bbc8e0f971?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VydmFsfGVufDB8fDB8fHww"
+                alt="serval"
+              />
+            </td>
+            <td colspan="2">Tito</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

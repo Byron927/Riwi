@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Kaushan+Script&display=swap");
+
+:root {
+  --primary: rgb(242, 178, 46);
+  --light: #eaeaea;
+  --dark: #131313;
+  --success: #ffb84d;
+}
+
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+}
+/* =============================================== */
+/* ESCRITORIO (XL revisamos en 1366px en adelante) */
+/* =============================================== */
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+}
+
+.header .cont-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .cont-logo img {
+  height: 80px;
+}
+.header .cont-logo p {
+  font-size: 30px;
+  font-family: "kaushan Script", cursive;
+  font-weight: bold;
+  color: var(--light);
+}
+.nav-bar a {
+  border: 2px solid var(--primary);
+  padding: 3px 10px;
+  color: var(--primary);
+  font-size: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.nav-bar a:hover {
+  background: var(--primary);
+  color: var(--dark);
+}
+.navbar-mobile {
+  display: none;
+}
+/* banner */
+
+.banner {
+  background-image: linear-gradient(
+    120deg,
+    var(--dark) 60%,
+    var(--success) 40%
+  );
+  height: 100vh;
+  width: 100%;
+}
+/* ================================== */
+/* TABLE O MOVIL (revisamos en 768px) */
+/* ================================== */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header.cont-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .navbar-mobile {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--primary);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 200;
+  }
+
+  .navbar-mobile a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: var(--primary);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  .navbar-mobile a:hover {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <a href=".">volver</a>
+    <a id="inicio"></a>
+    <center>
+      <h1>Multimedia</h1>
+    </center>
+    <hr />
+    <h2>Insertar imagen local</h2>
+    <img
+      src="https://www.bunko.pet/__export/1613245335853/sites/debate/img/2021/02/13/gato_servalx_todo_lo_que_debes_saber_sobre_este_felino_salvaje.jpeg_554688468.jpeg"
+      alt="serval"
+      height="250px"
+    />
+    <h2>Insertar imagen en linea</h2>
+    <img
+      src="https://s1.eestatic.com/2023/07/29/ciencia/782681856_235038553_1706x960.jpg"
+      alt="tigre"
+      height="250px"
+      loading="lazy"
+    />
+    <h2>Insertar gift local</h2>
+    <img
+      src="https://usagif.com/wp-content/uploads/gif/howling-wolf-26.gif"
+      alt="lobo"
+      height="250"
+    />
+    <h2>Figura con leyenda</h2>
+    <figure>
+      <img
+        src="https://www.eltiempo.com/files/article_main_1200/uploads/2019/12/10/5df03337f2041.jpeg"
+        alt="pitbull"
+        height="250"
+      />
+      <figcaption>pitbull</figcaption>
+    </figure>
+    <hr />
+    <iframe
+      src="https://player.vimeo.com/video/363524230?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1"
+      width="500"
+      height="500"
+    ></iframe>
+    <h2>Importar video</h2>
+    <video
+      src="/HTML/02 hipervinculos/img/video.mp4"
+      poster="https://www.eltiempo.com/files/article_main_1200/uploads/2019/12/10/5df03337f2041.jpeg"
+      height="250"
+      controls
+    ></video>
+    <h2>Importar video con auto play</h2>
+    <video src="/img/video.mp4" height="250" controls muted autoplay></video>
+    <h2>Importar video con subtitulos</h2>
+    <video src="/img/video.mp4" controls height="250">
+      <!-- archivo .vtt es el formato que trae los subtitulos     -->
+      <track src="subtitulo.vtt" kind="subtitles" label="Español" />
+    </video>
+    <h2>Importar un audio</h2>
+    <audio src="/img/audio.mp3" controls muted autoplay></audio>
+    <footer>
+      <a href="#inicio">Inicio</a>
+    </footer>
+  </body>
+</html>

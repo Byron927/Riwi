@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&display=swap");
+
+:root {
+  --primary: #e9e3e6;
+  --secondary: #b2b2b2;
+  --success: #736f72;
+  --t: #38423b;
+  --blue: #3f5e5a;
+  --light: #d2d3d7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+  color: black;
+  /* outline: 1px solid red; */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary);
+}
+
+.header {
+  background: var(--primary);
+  min-width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  position: sticky;
+  & .logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    & .img {
+      background-image: url(../img/photo1702659253.jpeg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: 1s;
+    }
+    & .img:hover {
+      transform: scale(2.5) translateY(15px);
+      border-radius: 25%;
+    }
+    & span {
+      font-weight: bold;
+    }
+  }
+  & .navbar {
+    display: flex;
+    gap: 20px;
+    & a {
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    & a:hover {
+      transform: scale(1.1);
+    }
+  }
+  & .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    & a {
+      text-decoration: none;
+
+      & i {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        border-radius: 100%;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    & .x {
+      & i:hover {
+        color: black;
+        transform: scale(1.4);
+      }
+    }
+    & .i {
+      & i:hover {
+        color: magenta;
+        transform: scale(1.4);
+      }
+    }
+    & .y {
+      & i:hover {
+        color: red;
+        transform: scale(1.4);
+      }
+    }
+    & .l {
+      & i:hover {
+        color: blue;
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  & a {
+    text-decoration: none;
+    & i {
+      width: 35px;
+      height: 35px;
+      font-size: 30px;
+      border-radius: 100%;
+      transition: 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

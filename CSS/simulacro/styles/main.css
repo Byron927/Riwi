@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap");
+
+:root {
+  --amarillo: #ffcc29;
+  --azulito: #80d3db;
+  --azul: #197db1;
+  --marron: #847059;
+}
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.checkbox,
+.option-hotel,
+.sesion,
+#reservas,
+#inicio {
+  display: none;
+}
+
+body {
+  background: whitesmoke;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cont-logo {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  z-index: 999;
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background: whitesmoke;
+}
+
+.header img {
+  height: 50px;
+}
+
+.r {
+  display: none;
+}
+
+#reservas:checked ~ .option-hotel {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 100px;
+  align-items: center;
+  width: 150px;
+  gap: 10px;
+  background: var(--azul);
+
+  & .check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .btn {
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  & .btn:hover {
+    background-color: var(--azulito);
+  }
+
+  .btn:active {
+    background-color: var(--azul);
+  }
+}
+
+#inicio:checked ~ .sesion {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 100px;
+  align-items: center;
+  width: 150px;
+  gap: 10px;
+  background: var(--azul);
+
+  & .btn {
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  & .btn:hover {
+    background-color: var(--azulito);
+  }
+
+  .btn:active {
+    background-color: var(--azul);
+  }
+}
+.first {
+  background-image: url(/CSS/simulacro/img/banner01.jpg);
+  width: 100vw;
+  height: 92vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: end;
+  & .first-i {
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    & i {
+      color:#ffcc29;
+      font-size: 4em;
+      background: whitesmoke;
+      border-radius: 100%;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.second {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  & .texto {
+    padding: 40px;
+    width: 50%;
+    height: 60%;
+    font-family: "Ubuntu", sans-serif;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    background: whitesmoke;
+    flex-direction: column;
+
+    & p {
+      line-height: 1.3;
+    }
+  }
+  & .img {
+    width: 50%;
+    height: 60%;
+    background-repeat: no-repeat;
+    font-family: "Ubuntu", sans-serif;
+    color: whitesmoke;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    position: relative;
+    & .mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      
+    }
+
+    & span {
+      z-index: 10;
+    }
+  }
+  & .img-a {
+    background-image: url(/CSS/simulacro/img/plan-romantico.png);
+  }
+  & .img-b {
+    width: 33.3%;
+    height: 40%;
+    background-image: url(/CSS/simulacro/img/luna-de-miel.png);
+  }
+  & .img-c {
+    width: 33.3%;
+    height: 40%;
+    background-image: url(/CSS/simulacro/img/plan-aventura.png);
+  }
+  & .img-d {
+    width: 33.3%;
+    height: 40%;
+    background-image: url(/CSS/simulacro/img/plan-spa.png);
+  }
+}

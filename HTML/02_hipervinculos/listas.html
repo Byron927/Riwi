@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <a href=".">Volver</a>
+    <a href="#listas_anidadas_combinadas">Ver listas anidadas combinadas</a>
+    <header>
+      <center>
+        <h1 id="inicio">Listas en HTML</h1>
+      </center>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2>Listas Ordenadas</h2>
+        <ol>
+          <!-- li{item $}*6.class -->
+          <li class="class">item 1</li>
+          <li class="class">item 2</li>
+          <li class="class">item 3</li>
+          <li class="class">item 4</li>
+          <li class="class">item 5</li>
+          <li class="class">item 6</li>
+        </ol>
+        <h2>Listas no Ordenadas</h2>
+        <ul>
+          <li class="class">item 1</li>
+          <li class="class">item 2</li>
+          <li class="class">item 3</li>
+          <li class="class">item 4</li>
+          <li class="class">item 5</li>
+          <li class="class">item 7</li>
+        </ul>
+        <h2>Listas no Ordenadas Anidadas</h2>
+        <ul>
+          <li>
+            item 1
+            <ul>
+              <li>subitem 1</li>
+              <li>subitem 2</li>
+              <li>subitem 3</li>
+            </ul>
+          </li>
+          <li class="class">item 2</li>
+          <li class="class">item 3</li>
+          <li class="class">item 4</li>
+          <li class="class">item 5</li>
+        </ul>
+        <h2>Listas Ordenadas Anidadas</h2>
+        <ol>
+          <!-- li{item $}*6 -->
+          <li>
+            item 1
+            <ol>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+              <li>item 4</li>
+              <li>item 5</li>
+            </ol>
+          </li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ol>
+        <h2 id="listas_anidadas_combinadas">Lista Anidada Combinada</h2>
+        lista global
+        <ol>
+          <!-- primer lista -->
+          <li>
+            item 1
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+            </ul>
+          </li>
+          <!-- segunda lista -->
+          <li>
+            item 2
+            <ol>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <a href="#inicio">Inicio</a>
+    </footer>
+  </body>
+</html>

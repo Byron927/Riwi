@@ -1,77 +1,42 @@
-localStorage.setItem("company", "riwi")
+// ejemplo basico para guardar informacion en el localstorage
+localStorage.setItem("Keiber", "Lázaro");
+// ejemplo basico para obtener informacion del localstorage
+const info = localStorage.getItem("Keiber");
 
-// Ejemplo basico para obtener info del localstorage
+console.log(info);
 
-const info = localStorage.getItem("company");
+// eliminar un item del localStorage
+localStorage.removeItem("Keiber");
 
-// console.log(info)
+// eliminar o limpiar todo el localStorage
+localStorage.clear();
+console.log(info);
 
-// Eliminar un item localStorage
-localStorage.removeItem("company")
-
-
-// ELiminar o limpiar todo el localstorage
-localStorage.clear()
-// console.log(info)
-
-//GUARDAR UN OBJETO EN EL LOCALSTORAGE
-
-//1. Crear objeto
+// ejemplo para guardar un objeto en el localStorage
+// 1. creamos el objeto
 const coder = {
-    nombre: "Terry",
-    fecha_nac: "Mayo",
-    edad: 24
+  nombre: "Leandro",
+  fecha_nac: "septiembre",
+  edad: 24,
 };
-
-//2.Convertir el objeto a string (JSON)
-console.log(coder)
+// 2. convertir el objeto a string (JSON)
+console.log(coder);
 const objString = JSON.stringify(coder);
-console.log(objString)
+console.log(objString);
 
-//3.Agregar el objeto al localstorage
+// 3. agregar el objeto al localStorage
 localStorage.setItem("coder", objString);
 
-// Actualizar el objeto
+// actualizar el objeto
 
-//1. Obtener el objeto guardado anteriormente
+// 1. obtener el objeto guardado anteriormente
 let coderModificar = localStorage.getItem("coder");
 
-//2. Convertir de String a codigo (JSON)
-codigoModificar = JSON.parse(coderModificar);
+// 2. convertir de String a codigo (JSON)
+coderModificar = JSON.parse(coderModificar);
+coderModificar.fecha_nac = "octubre";
+coderModificar.edad = 31;
 
-coderModificar.fecha_nac = "junio";
-coderModificar.edad = 21;
-
-
-//3. Convertir de nuevo el objeto en String y sobrescribir el localstorage
-localStorage.setItem("coder", JSON.stringify(coder))
-console.log(coderModificar)
-
-
-//Lista de objetos
-const coders = [
-    { nombre: "Roberto", edad: 34 },
-    { nombre: "Ricardo", edad: 21 },
-    { nombre: "Julian", edad: 22 },
-    { nombre: "Darwing", edad: 23 },
-    { nombre: "Tomás", edad: 20 },
-]
-
-let listaString = JSON.stringify(coders);
-
-localStorage.setItem("coders", listaString);
-
-let listaActualizar = localStorage.getItem("coders");
-
-listaActualizar = JSON.parse(listaActualizar);
-
-listaActualizar.forEach(element => {
-    if (element.nombre == "Darwing") {
-        element.edad++
-    }
-})
-
-localStorage.setItem("coders", JSON.stringify(listaActualizar))
-
-console.log(listaActualizar)
-
+// 3.convertir de nuevo el objeto en string y sobreescribir el localStorage
+localStorage.setItem("coder", JSON.stringify(coderModificar));
+console.log(coderModificar);

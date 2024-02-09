@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "id": "15984",
+      "name": "Ficcion y literatura"
+    }
+  ],
+  "authors": [
+    {
+      "id": "5674",
+      "name": "Keiber",
+      "age": "32"
+    },
+    {
+      "id": "1053",
+      "name": "Byron",
+      "age": "31"
+    },
+    {
+      "id": "e4fa",
+      "name": "Rigushi",
+      "age": "19"
+    }
+  ],
+  "books": [
+    {
+      "id": "c278",
+      "name": "La Pola",
+      "date": "2024-01-01",
+      "authorId": "5674",
+      "categoryId": "15984"
+    },
+    {
+      "id": "8f16",
+      "name": "xxx",
+      "date": "2024-01-31",
+      "authorId": "e4fa",
+      "categoryId": "15984"
+    }
+  ]
+}

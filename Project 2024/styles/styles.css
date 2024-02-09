@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --primary: #6b5cff;
+  --secondary: #181e4b;
+  --fontW: #fff;
+  --fontB: #000;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--primary);
+  background-image: url(./img/Illustration\ 5Fondo.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  & nav {
+    margin-top: 5px;
+    border-radius: 15px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    justify-content: space-around;
+    display: flex;
+    background: var(--secondary);
+    color: var(--fontW);
+    & img {
+      width: 50px;
+    }
+  }
+  & .container {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    border: 5px solid red;
+    width: 80%;
+    height: 100vh;
+    & .card {
+      width: 350px;
+      height: 60%;
+      border: 2px solid black;
+      padding: 5px;
+      background: var(--fontW);
+    }
+  }
+}

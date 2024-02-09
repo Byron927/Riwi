@@ -1,0 +1,41 @@
+.g-home {
+  position: relative;
+  background: var(--secondary);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  & .sub-name {
+    width: 70%;
+    & .card {
+      background: var(--success);
+      color: var(--light);
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 38px;
+      font-weight: bold;
+      width: max-content;
+    }
+    & h1 {
+      color: var(--light);
+      font-size: 52px;
+      margin-top: 20px;
+
+      & .text-succes {
+        color: var(--success) !important;
+      }
+    }
+  }
+
+  & img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: 2s all;
+  }
+  & img:hover {
+    rotate: 360deg;
+  }
+}

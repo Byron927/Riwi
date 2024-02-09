@@ -1,0 +1,49 @@
+.bonus {
+  height: max-content;
+  background: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  flex-wrap: wrap;
+  & .s-bonus {
+    width: 300px;
+    height: 100px;
+    align-items: center;
+    background: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    & .img {
+      margin: 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: var(--primary);
+    }
+    & img {
+      width: 60px;
+      background: var(--primary);
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+    & .tex {
+      margin-right: 25px;
+      background: var(--secondary);
+      & p {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      & span {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(112, 114, 112);
+      }
+    }
+  }
+}

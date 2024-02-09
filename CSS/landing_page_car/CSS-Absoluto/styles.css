@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+main {
+  height: 200vh;
+  width: 100%;
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contendor {
+  background-color: blue;
+  height: 50vh;
+  width: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  background: aquamarine;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.item::before {
+  content: "";
+  width: 0;
+  height: 100px;
+  position: absolute;
+  /* background: #000; */
+  bottom: 0;
+  transition: 0.3s;
+  background-image: url("./car.png");
+  background-size: cover;
+}
+
+.item:hover::before {
+  width: 100%;
+}
+
+.btn-wp {
+  border-radius: 50%;
+  padding: 10px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #25d366;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-wp:hover {
+  transform: scale(1.5);
+}
+
+.btn-wp i {
+  font-size: 50px;
+  color: #fff;
+}

@@ -1,0 +1,139 @@
+.poins {
+  background: var(--secondary);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin-top: 20px;
+  & .s-poins {
+    margin: 10px;
+    width: 98%;
+    height: 98%;
+    outline: 1px solid var(--light);
+    background: var(--secondary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    & .accumulated {
+      position: absolute;
+      background: var(--success);
+      color: var(--light);
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 10px;
+      top: -20px;
+      font-size: 20px;
+    }
+    & .text {
+      position: absolute;
+      font-weight: bold;
+      top: 40px;
+
+    }
+    & img {
+      z-index: 3;
+      position: absolute;
+      width: 150px;
+      right: 0px;
+      bottom: -9px;
+    }
+    & .classification {
+      position: absolute;
+      display: flex;
+      align-items:center;
+      top: 80px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      
+      & .c1, .c2 {
+        width: 200px;
+        height: 200px;
+        background: var(--primary);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & .c11, .c22 {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 90%;
+          height: 90%;
+          border-radius: 5px;
+          outline: 1px solid var(--light);
+          & .t {
+            font-size: 10px;
+            font-weight: bold;
+          }
+          & p {
+            font-size: 10px;
+          }
+        & .logo1, .logo2, .logo3 {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--secondary);
+          width: 50px;
+          height: 50px;
+          border-radius: 100%;
+          top: -25px;
+          & .logo11 {
+            background-image: url(../img/gaming-profile-pictures-ai9qlazq1uszo8v4.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
+            border-radius: 100%;
+            background-size: cover;
+            background-position: center;
+          }
+          & .logo22{
+            background-image: url(../img/082723ad570164eb39b670dbad5ee92a.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
+            border-radius: 100%;
+            background-size: cover;
+            background-position: center;
+          }
+          & .logo33{
+            background-image: url(../img/gaming-profile-pictures-4v1pzuz1uqbshmur.jpg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
+            border-radius: 100%;
+            background-size: cover;
+            background-position: center;
+          }
+        }
+        
+      }
+      
+    }
+  }
+}
+}
+
+#c2 {
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(220deg, 
+  var(--light) 0%, 
+  var(--blue) 40%);
+
+}

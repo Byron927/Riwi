@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href=".">Volver</a>
+    <h1>Formularios</h1>
+    <main>
+      <form action="index.html" accept-charset="UTF-8">
+        <div>
+          <p>Ingrese su nombre completo</p>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            placeholder="ejm: Pinola Loaiza"
+          />
+        </div>
+        <div>
+          <p>Ingrese su fecha de nacimiento</p>
+          <input
+            type="date"
+            name="fecha_nacimiento"
+            id="fecha_nacimiento"
+            required
+          />
+        </div>
+        <br />
+
+        <fieldset>
+          <legend>Datos de seguridad</legend>
+          <!-- el for en label debe tener el mismo valor del id para que al dar click en "Ingrese su usuario"se vaya al espacio donde se colocan los datos -->
+          <div>
+            <label for="usuarios">Ingrese su usuario:</label>
+            <input type="text" name="usuario" id="usuarios" required />
+          </div>
+          <br />
+          <div>
+            <label for="password">Ingrese su contraseña:</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <br />
+          <div>
+            <label for="color">Color favorito</label>
+            <input type="color" name="color" id="color" />
+          </div>
+          <br />
+          <div>
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais">
+              <option value="" selected>--</option>
+              <option value="mx">Mexico</option>
+              <option value="us">Estados Unidos</option>
+              <option value="br">Brasil</option>
+              <option value="co">Colombia</option>
+            </select>
+          </div>
+          <div>
+            <label for="genero">Genero</label>
+            <input type="radio" name="genero" id="genero" value="h" />
+            Hombre
+            <input type="radio" name="genero" id="genero" value="m" />
+            Mujer
+            <input type="radio" name="genero" id="genero" value="o" />
+            Otro
+          </div>
+          <div>
+            <p for="descripcion">Descripcion</p>
+            <textarea
+              placeholder="descripcion"
+              name="descripcion"
+              id="descripcion"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <br />
+          <div>
+            <input type="range" value="" min="0" max="10" />
+            <input type="number" />
+            <input type="email" required />
+          </div>
+          <br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Enviar" />
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
