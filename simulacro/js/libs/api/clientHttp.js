@@ -31,3 +31,18 @@ export async function get(url) {
     console.error(error);
   }
 }
+
+//Funcion para eliminar en la base de datos
+export async function deleteHttp(url) {
+  try {
+    const response = await fetch(url, {
+      method: "DELETE",
+    });
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}

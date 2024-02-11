@@ -1,4 +1,4 @@
-import { get, post } from "../../api/clientHttp.js";
+import { deleteHttp, get, post } from "../../api/clientHttp.js";
 import { URL_CATEGORIES } from "../../api/URLS.js";
 import { printCategories } from "./functionDOM.js";
 //Selectores
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   getCategories();
 });
 
+//Función crear categoria
 async function createCategory() {
   const newCategory = {
     name: nameCategory.value,
@@ -31,6 +32,7 @@ async function createCategory() {
   await post(URL_CATEGORIES, newCategory);
 }
 
+//Función de obtener/imprimir categorias
 //En esta función recibimos la url con get, pero tambien necesito la info y get en el...
 //...clientHttp.js retorna esa info entonces la guardo acá en la variable data
 async function getCategories() {
@@ -39,4 +41,12 @@ async function getCategories() {
   //Un atajo para importar las funciones, después de darle export a la que creamos, acá podemos...
   //...entre la ultima letra y el parentesis y presionar ctrl espacio y listo
   printCategories(data);
+}
+
+//Función de eliminar categoria
+export async function deleteCategory(id) {
+  console.log("Eliminando id", id);
+  //le vamos a concatenar el identificador de lo que queremos eliminar en el query param
+  await deleteHttp(`${URL_CATEGORIES}/${id}`);
+  //En este caso no le pongo el response y el data porque no necesito que me devuelva nada
 }

@@ -1,11 +1,16 @@
 import { cleanHTML } from "../../utils/cleanHTML.js";
+import { deleteCategory } from "./categories.js";
 //Selector del tbody
 const categoriesTbody = document.getElementById("categorias-tbody");
 
 export function printCategories(categories) {
-    //Limpiar el html para eliminar lo que está por defecto y no tiene base de datos...
-    //...pero se comentará
-  categoriesTbody.innerHTML = "";
+  //Limpiar el html para eliminar lo que está por defecto y no tiene base de datos...
+  //...pero se comentará y se importará mejor la función de cleanHTML, debido a que...
+  //...son muchas las veces que tendremos que hacerlo
+  // categoriesTbody.innerHTML = "";
+
+  //Explicación en el script de cleanHTML.js
+  cleanHTML(categoriesTbody);
 
   //Como esta categoria es una lista entonces haré foreach
   categories.forEach((category) => {
@@ -27,7 +32,8 @@ export function printCategories(categories) {
     btnEdit.classList.add("btn", "btn-primary");
     //Como estamos usando DOM scripting debemos agregar los eventos
     btnDelete.addEventListener("click", () => {
-      console.log("eliminando");
+      //esta funcion se esta importando desde el script de categories
+      deleteCategory(category.id);
     });
 
     btnEdit.addEventListener("click", () => {
