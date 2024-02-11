@@ -1,6 +1,12 @@
 {
   "news": [],
-  "categories": [],
+  "categories": [
+    {
+      "id": "f36b",
+      "name": "hola",
+      "description": "mundo"
+    }
+  ],
   "users": [
     {
       "id": "d371",
