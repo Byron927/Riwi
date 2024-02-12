@@ -46,3 +46,22 @@ export async function deleteHttp(url) {
     console.error(error);
   }
 }
+
+//Funcion de actualizar
+export async function update(url, info) {
+  try {
+    const response = await fetch(url, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(info),
+    });
+
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}

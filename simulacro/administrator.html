@@ -99,6 +99,7 @@
               class="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#modal-category"
+              id="btnAddCategoryModal"
             >
               Add new Category
             </button>
@@ -256,6 +257,8 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <form class="modal-content" id="formCategories">
+          <input type="hidden" id="idCategoryUpdate">
+
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Category</h1>
             <button

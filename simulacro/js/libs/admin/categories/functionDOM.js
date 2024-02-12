@@ -1,7 +1,15 @@
 import { cleanHTML } from "../../utils/cleanHTML.js";
-import { deleteCategory } from "./categories.js";
+import {
+  deleteCategory,
+  descriptionCategory,
+  nameCategory,
+} from "./categories.js";
 //Selector del tbody
 const categoriesTbody = document.getElementById("categorias-tbody");
+export const idCategoryUpdate = document.getElementById("idCategoryUpdate");
+export const btnAddCategoryModal = document.getElementById(
+  "btnAddCategoryModal"
+);
 
 export function printCategories(categories) {
   //Limpiar el html para eliminar lo que está por defecto y no tiene base de datos...
@@ -37,7 +45,7 @@ export function printCategories(categories) {
     });
 
     btnEdit.addEventListener("click", () => {
-      console.log("editando");
+      loadInfoCategory(category);
     });
     //Acá estaremos agregando el texto que literalmente llevarán las columnas (td)...
     //...en la fila (tr)
@@ -62,4 +70,19 @@ export function printCategories(categories) {
     //...crear una carpeta utils
     categoriesTbody.appendChild(tr);
   });
+}
+
+//Funcion para cargar/mostrar la info de lo que se desea editar
+function loadInfoCategory(category) {
+  nameCategory.value = category.name;
+  descriptionCategory.value = category.description;
+  //Como hace falta el id de lo que se está actualizando entonces tendremos que adicionar...
+  //...en el html dentro del formulario de categorias un input tipo hidden (input type="hidden")...
+  //...con el identificador idCategoryUpdate, para que aparezca oculto en el modal, no olvidar...
+  //...que también se le debe hacer el selector con su respectivo id.
+  idCategoryUpdate.value = category.id;
+  //Para que el modal en donde se ve el nombre y la categoria se abra debemos insertarle...
+  //...un id al boton que tiene ese modal, seleccionarlo y traerlo con el evento click...
+  //...a esta funcion para que se abra cuando le den click al boton editar y se vea la info
+  btnAddCategoryModal.click();
 }
