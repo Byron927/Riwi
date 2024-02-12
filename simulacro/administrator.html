@@ -162,6 +162,7 @@
               class="btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#modal-notice"
+              id="btnOpenModalNews"
             >
               Add new Notice
             </button>
@@ -180,7 +181,7 @@
               </tr>
             </thead>
 
-            <tbody id="categorias-tbody">
+            <tbody id="news-tbody">
               <tr>
                 <td>
                   <img
@@ -313,7 +314,8 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
-        <form class="modal-content">
+        <form class="modal-content" id="formNews">
+          <input type="hidden" id="idNewsUpdate">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Notice</h1>
             <button
@@ -377,5 +379,6 @@
     </div>
     <script src="js/libs/bootstrap.bundle.min.js"></script>
     <script src="./js/libs/admin/categories/categories.js" type="module"></script>
+    <script src="./js/libs/admin/news/index.js" type="module"></script>
   </body>
 </html>
