@@ -28,5 +28,5 @@
 
 Siempre hay que hacer un pull antes de hacer un push
 
-## Titulo 2
+## Titulo 2.
 
